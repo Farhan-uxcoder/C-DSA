@@ -81,7 +81,7 @@ int main(){
                 break;
             default:
                 printf("Invalid choice\n");
-    }  
+    }
 }
 return 0;
 }
