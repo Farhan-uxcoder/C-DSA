@@ -27,7 +27,13 @@ void create(){
     }
 }
 void display(){
-    
+    struct node *temp = head;
+    while(temp!NULL){
+        printf("%d->",temp->data);
+        temp=temp->next
+    }
+    printf("NULL\n");
+
 }
 int main(){
     int ch;
@@ -44,5 +50,7 @@ int main(){
                 break;
             case 3:
             exit (0);
-    }
+            }
+        }
+return 0;
 }

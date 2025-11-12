@@ -1,0 +1,35 @@
+Module 5: Strings, Pointers and Structures
+
+1. What is structure? Explain the C syntax of structure declaration with example
+
+2. How structure is declared and initialize.
+
+3. Write a C program to maintain a record of „n‟ students details using an array of structures with four fields(roll no,name,marks,and grade).Assume appropriate data type for each field. Print the marks of the student given the student name as input.
+
+4. Write a C program to store and print name, USN, subject and IA marks of students using structure
+
+5. Explain the difference between array and structures
+
+6. Write a program to maintain a record of „n‟ employee detail using an array of structures with three fields(id, name , salary) and print the details of employees whose salary is above 5000
+
+7. What is pointer ? Explain how the pointer variable declared and initialized?
+
+8. Explain the array of pointes with example? or Explain how pointers and arrays are related with example
+
+9. Develop a program using pointers to compute the Sum, Mean and Standard deviation of all elements stored in an array of N real numbers
+
+10. Explain how strings are represented in main memory
+
+11. Explain gets()and puts() function with example
+
+12. List out the advantages and disadvantages of pointers?
+
+13. Explain string taxonomy in detail?
+
+14. How to pass array of strings as a parameter to the function with suitable example.
+
+15. Explain any 2 preprocessor directives in C
+
+16. Write a c program to maintain a record of n students using structures with 4 fields (Roll number , marks , name and grade). Print the names of the students with marks>=70.
+
+17. Explain any 4 Miscellaneous character function available in c.
