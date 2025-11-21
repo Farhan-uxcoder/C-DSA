@@ -1,0 +1,70 @@
+// pgm to implement the stack and its operations
+#include <stdio.h>
+#include <stdlib.h>
+
+#define MAX 101
+int stack[MAX];
+int top =-1;
+
+void push(int item){
+    if(top==MAX-1){
+        printf("the stack is full");
+    }else{
+        stack[++top]=item;
+        printf("pushed sucessfully\n");
+    }
+}
+
+int pop(){
+    if(top==-1){
+    printf("stack is empty");
+    return -1;
+    }else{
+       int itemdel=stack[top--];
+    return itemdel;
+    }
+}
+
+void display(){
+    int i;
+    if(top==-1){
+    printf("stack is empty");
+    }else{
+        printf("the elements are as follows :\n");
+        for(i=top;i>=0;i--){
+            printf("%d ",stack[i]);
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    int ch,item,itemdel;
+    while(1){
+        printf("enter your choice \n1.to Push\n2.to Pop\n3.display\n4.exit\n");
+        scanf("%d",&ch);
+        switch(ch){
+            case 1:
+                printf("enter the value of item \n");
+                scanf("%d",&item);
+                push(item);
+            break;
+            
+            case 2:
+                itemdel=pop();
+                if(itemdel!=-1){
+                    printf("item deleted sucesssfully");
+                }
+            break;
+            case 3:
+                 display();
+            break;
+            case 4:
+                exit(0);
+            break;
+            default:
+                printf("enter the valid input");
+            break;
+        }
+    }
+}
