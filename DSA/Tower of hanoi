@@ -1,0 +1,22 @@
+// the towers of hanoi problem answer
+ void tower(int,char,char,char); 
+  void main() 
+  { 
+int n; 
+clrscr(); 
+printf("enter the number of disks\n"); 
+scanf("%d",&n); 
+tower(n,'A','C','B'); 
+getch();
+ } 
+  void tower(int num,char frompeg,char topeg,char auxpeg) 
+  { 
+  if(num==1) 
+{ 
+printf("move disk %d from %c to %c\n",num,frompeg,topeg); 
+return; 
+} 
+tower(num-1,frompeg,auxpeg,topeg); 
+printf("move disk %d from %c to %c\n",num,frompeg,topeg); 
+tower(num-1,auxpeg,topeg,frompeg); 
+} 
